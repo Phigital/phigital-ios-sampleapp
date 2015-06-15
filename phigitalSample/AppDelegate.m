@@ -18,14 +18,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
     [Phigital setDelegate:self];
-    NSString* appId = @"XfGetpmO";//@"lIUJqPvj";
-    NSString* appSecret = @"tvMhqpeRRqwcyD8tXOEi5LKT";//@"1WTYAOSFy5i78Tbwsileog4H";
+    NSString* appId = @"YourAppID";
+    NSString* appSecret = @"YourAppSecret";
     [Phigital initWithAppId:appId andAppSecret:appSecret];
-    
-    NSLog(@"%i", [CLLocationManager locationServicesEnabled]);
-    
     
     return YES;
 }
@@ -70,7 +67,7 @@
 
 - (void)application:(UIApplication*)application didReceiveLocalNotification:(UILocalNotification*)notification
 {
-    //AND forward to Phigital SDK
+    //Forward to Phigital SDK
     [Phigital application:application didReceiveLocalNotification:notification];
 }
 
@@ -80,8 +77,6 @@
     {
         if (error.code == PHErrorPermissionsLocationServicesMissing)
         {
-           // [MPNotificationView notifyWithText:@"PHErrorPermissionsLocationServicesMissing" andDetail:error.localizedDescription];
-            
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enable Location Services"
                                                             message:@""
                                                            delegate:self
@@ -110,9 +105,7 @@
     NSDictionary* bundleUrlTypesDic = [bundleUrlTypesArray lastObject];
     NSArray* bundleUrlSchemes = [bundleUrlTypesDic objectForKey:@"CFBundleURLSchemes"];
     NSString* phigitalSchema = [bundleUrlSchemes objectAtIndex:0];
-    
-    NSLog(@"%@", phigitalSchema);
-    
+
     NSString* handledUrlString = [url absoluteString];
     if ([handledUrlString rangeOfString:phigitalSchema].length > 0)
     {

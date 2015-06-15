@@ -38,8 +38,6 @@ $ sudo gem install cocoapods
 $ pod setup
 Depending on your Ruby installation, you may not have to run as sudo to install the cocoapods gem.
 
-$ pod repo add https://bitbucket.org/gophigital/cocoapods
-
 Step 2: Create a Podfile
 Project dependencies to be managed by CocoaPods are specified in a file called Podfile. Create this file in the same directory as your Xcode project (.xcodeproj) file:
 $ touch Podfile
@@ -47,7 +45,7 @@ $ open -e Podfile
 TextEdit should open up showing an empty file. You just created the pod file and opened it! Ready to add some content to the empty pod file?
 Copy and paste the following lines into the TextEdit window:
 source 'https://bitbucket.org/gophigital/cocoapods'
-pod 'PhigitalSDK', '> 0.0.1'
+pod 'PhigitalSDK', '> 2.0.0'
 Make sure the quotes are straight, not slanted/apostrophes. If TextEdit gives you trouble, use Sublime or copy/paste the code above instead of typing it in.
 
 Step 3: Install Dependencies
@@ -81,4 +79,8 @@ Unzip to get PhigitalSDKResources.
 Drag and drop the folder into your project.
 
 - Add your appId and appSecret at AppDelegate.
+ 
+- Add your experience Id at phigitalStartExperience method at ViewController.m .
+
+- Add your Email and PWD at relevant text fields. 
 

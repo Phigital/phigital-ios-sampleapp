@@ -54,8 +54,8 @@
     if(![PhigitalUtils shouldLogin]){
        
        //Launch Discover
-       UIViewController *discoverController = [Phigital getDiscover];
-       [self.navigationController pushViewController:discoverController animated:YES];
+       //UIViewController *discoverController = [Phigital getDiscover];
+       //[self.navigationController pushViewController:discoverController animated:YES];
     }
     else{
    
@@ -76,14 +76,13 @@
         
         //Remove ActivityIndicator
         [spinner stopAnimating];
-         [Phigital setDelegate:self];
-        [Phigital setUiDelegate:self];
-        
-        //Launch Discover
-        UIViewController *discoverController = [Phigital getDiscover];
-        [self.navigationController pushViewController:discoverController animated:NO];
-        
-        NSLog(@"login success");
+ 
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Success"
+                                                        message:@""
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
     }
 }
 
@@ -123,7 +122,7 @@
     else{
         
     //Set experience Id
-    NSString* expId = @"expTUSRjNhB";
+    NSString* expId = @"YourExperienceID";
     
     //Launch experience
     [Phigital startExperienceWithId:expId];
