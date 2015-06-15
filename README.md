@@ -45,7 +45,7 @@ $ open -e Podfile
 TextEdit should open up showing an empty file. You just created the pod file and opened it! Ready to add some content to the empty pod file?
 Copy and paste the following lines into the TextEdit window:
 
-source 'source 'https://github.com/CocoaPods/specs.git'
+source 'https://github.com/CocoaPods/specs.git'
 
 pod 'Phigital', '> 2.0.0'
 
