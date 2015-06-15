@@ -70,10 +70,10 @@ $ open <YourProjectName>.xcworkspace
 
 
 
-- Add  #import <PhigitalSDK/Phigital.h> to your class.
+- Add  #import PhigitalSDK/Phigital.h to your class.
 
 
-- Add <PhigitalProtocol> at AppDelegate.
+- Add PhigitalProtocol at AppDelegate.
 
 
 - Download Phigital Resources from https://s3.amazonaws.com/cocoapodbinaries/sdk/release/latest/PhigitalSDK.zip. 
