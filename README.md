@@ -63,6 +63,8 @@ $ open <YourProjectName>.xcworkspace
 
 - Add URL Scheme (Deeplink Protocol) provided by Phigital (step 1) to your project’s info.plist .
 
+URL types -> Item 0 -> URL Schemes -> Item 0 add YourDeeplinkProtocol .
+
 
 - Add “Required background modes” key to your project’s info.plist with following itms to enable audio, bluetooth, network downloading and location services.
 
