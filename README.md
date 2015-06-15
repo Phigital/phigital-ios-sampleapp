@@ -2,18 +2,18 @@
 Phigital iOS Sample App
 
 
-1. Get your Phigital Application Identifier, Application Secret and Deeplink Protocol.
+- Get your Phigital Application Identifier, Application Secret and Deeplink Protocol.
 
-- Go To   https://demo.gophigital.com.
-- Sign Up to create your account.
-- Go To ADMIN -> App.
-- Tap NEW APP.
-- Fill in the fields at the form that appears and Save.
-- You should see your APP ID, CLIENT SECRET and DEEPLINK PROTOCOL.
+Go To   https://demo.gophigital.com.
+Sign Up to create your account.
+Go To ADMIN -> App.
+Tap NEW APP.
+Fill in the fields at the form that appears and Save.
+You should see your APP ID, CLIENT SECRET and DEEPLINK PROTOCOL.
 
-2. Open Xcode project.
+- Open Xcode project.
 
-3. Install PhigitalSDK.
+- Install PhigitalSDK.
 
 
 Option 1:  
@@ -22,9 +22,6 @@ Download PhigitalSDK from  https://s3.amazonaws.com/cocoapodbinaries/sdk/release
 
 Drag and drop PhigitalSDK into your project. 
 Check “Copy items if needed” in pop up window.
-
-
-￼ 
 
 
 
@@ -60,41 +57,28 @@ From now on, be sure to always open the generated Xcode workspace (.xcworkspace)
 $ open <YourProjectName>.xcworkspace
 
 
-4. Go To Targets -> Build Settings -> Search Paths -> Framework Search Paths and add  $(PROJECT_DIR)/Pods/PhigitalSDK/PhigitalSDK .
+- Go To Targets -> Build Settings -> Search Paths -> Framework Search Paths and add  $(PROJECT_DIR)/Pods/PhigitalSDK/PhigitalSDK .
 
 
-5. Go To Targets -> General -> Embedded Binaries and add PhigitalSDK.framework .
+- Go To Targets -> General -> Embedded Binaries and add PhigitalSDK.framework .
 
 
-
-￼
-
-
-6. Add URL Scheme (Deeplink Protocol) provided by Phigital (step 1) to your project’s info.plist .
+- Add URL Scheme (Deeplink Protocol) provided by Phigital (step 1) to your project’s info.plist .
 
 
-￼
+- Add “Required background modes” key to your project’s info.plist with following itms to enable audio, bluetooth, network downloading and location services.
 
 
 
-7. Add “Required background modes” key to your project’s info.plist with following itms to enable audio, bluetooth, network downloading and location services.
+- Add  #import <PhigitalSDK/Phigital.h> to your class.
 
 
-
-￼
-
+- Add <PhigitalProtocol> at AppDelegate.
 
 
-8. Add  #import <PhigitalSDK/Phigital.h> to your class.
-
-
-9.Add <PhigitalProtocol>.
-
-￼
-
-
-10. Download Phigital Resources from https://s3.amazonaws.com/cocoapodbinaries/sdk/release/latest/PhigitalSDK.zip. 
+- Download Phigital Resources from https://s3.amazonaws.com/cocoapodbinaries/sdk/release/latest/PhigitalSDK.zip. 
 Unzip to get PhigitalSDKResources.
 Drag and drop the folder into your project.
 
-11. Add your appId and appSecret at AppDelegate.
+- Add your appId and appSecret at AppDelegate.
+
