@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>Title</key>
+	<string>Phigital</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>CEP</string>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Key</key>
+			<string>PHCEPDefaultsKey</string>
+			<key>DefaultValue</key>
+			<string>ws://cep.gophigital.com:443</string>
+			<key>Titles</key>
+			<array>
+				<string>QA</string>
+				<string>Dev</string>
+				<string>Staging</string>
+				<string>Production</string>
+				<string>Asia</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>ws://qa-cep.gophigital.com:443</string>
+				<string>ws://devc.gophigital.com:443</string>
+				<string>ws://stg-cep.gophigital.com:443</string>
+				<string>ws://cep.gophigital.com:443</string>
+				<string>ws://asia-cep.gophigital.com:443</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Geo distance (meters)</string>
+			<key>Key</key>
+			<string>PHGeoGroupingDistance</string>
+			<key>KeyboardType</key>
+			<string>NumberPad</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+		</dict>
+	</array>
+</dict>
+</plist>

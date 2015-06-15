@@ -1,0 +1,1 @@
+../../../PhigitalSDK/PhigitalSDK/PhigitalSDK.framework/Headers/PhigitalProtocols.h

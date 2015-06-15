@@ -1,0 +1,17 @@
+//
+//  AppDelegate.h
+//  phigitalSample
+//
+//  Created by giamou giannis
+//  Copyright (c) 2015 Phigital. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+
+@end
+
