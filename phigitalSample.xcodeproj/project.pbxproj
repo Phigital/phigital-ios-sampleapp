@@ -14,7 +14,6 @@
 		39EFD4C71AD2422000BF28BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EFD4C51AD2422000BF28BC /* Main.storyboard */; };
 		39EFD4C91AD2422000BF28BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EFD4C81AD2422000BF28BC /* Images.xcassets */; };
 		39EFD4CC1AD2422000BF28BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39EFD4CA1AD2422000BF28BC /* LaunchScreen.xib */; };
-		39EFD4D81AD2422000BF28BC /* phigitalSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFD4D71AD2422000BF28BC /* phigitalSampleTests.m */; };
 		B2F798341B2EDB9900959EC0 /* PhigitalSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F798331B2EDB9900959EC0 /* PhigitalSDK.framework */; };
 		B2F798351B2EDB9900959EC0 /* PhigitalSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2F798331B2EDB9900959EC0 /* PhigitalSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2F798571B2EDDB900959EC0 /* Phigital iOS SDK Implementation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B2F798381B2EDDB900959EC0 /* Phigital iOS SDK Implementation.pdf */; };
@@ -46,16 +45,6 @@
 		B2F798781B2EF90400959EC0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F798771B2EF90400959EC0 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		39EFD4D21AD2422000BF28BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 39EFD4B01AD2422000BF28BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 39EFD4B71AD2422000BF28BC;
-			remoteInfo = phigitalSample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		B202C9821B00EAA000206154 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -81,9 +70,6 @@
 		39EFD4C61AD2422000BF28BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39EFD4C81AD2422000BF28BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		39EFD4CB1AD2422000BF28BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		39EFD4D11AD2422000BF28BC /* phigitalSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = phigitalSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		39EFD4D61AD2422000BF28BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39EFD4D71AD2422000BF28BC /* phigitalSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = phigitalSampleTests.m; sourceTree = "<group>"; };
 		542281424179A7459AA1C922 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7470F3B92456314A87CE4D85 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F798331B2EDB9900959EC0 /* PhigitalSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhigitalSDK.framework; path = Pods/PhigitalSDK/PhigitalSDK/PhigitalSDK.framework; sourceTree = "<group>"; };
@@ -128,13 +114,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		39EFD4CE1AD2422000BF28BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -153,7 +132,6 @@
 				B2F798361B2EDDB900959EC0 /* PhigitalSDKResources */,
 				B2F798331B2EDB9900959EC0 /* PhigitalSDK.framework */,
 				39EFD4BA1AD2422000BF28BC /* phigitalSample */,
-				39EFD4D41AD2422000BF28BC /* phigitalSampleTests */,
 				39EFD4B91AD2422000BF28BC /* Products */,
 				5E63C3DA00996AA3D51E671B /* Pods */,
 				02ADE4D23666C648844E7709 /* Frameworks */,
@@ -164,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				39EFD4B81AD2422000BF28BC /* phigitalSample.app */,
-				39EFD4D11AD2422000BF28BC /* phigitalSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,23 +166,6 @@
 			children = (
 				39EFD4BC1AD2422000BF28BC /* Info.plist */,
 				39EFD4BD1AD2422000BF28BC /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		39EFD4D41AD2422000BF28BC /* phigitalSampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				39EFD4D71AD2422000BF28BC /* phigitalSampleTests.m */,
-				39EFD4D51AD2422000BF28BC /* Supporting Files */,
-			);
-			path = phigitalSampleTests;
-			sourceTree = "<group>";
-		};
-		39EFD4D51AD2422000BF28BC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				39EFD4D61AD2422000BF28BC /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -328,24 +288,6 @@
 			productReference = 39EFD4B81AD2422000BF28BC /* phigitalSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		39EFD4D01AD2422000BF28BC /* phigitalSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 39EFD4DE1AD2422000BF28BC /* Build configuration list for PBXNativeTarget "phigitalSampleTests" */;
-			buildPhases = (
-				39EFD4CD1AD2422000BF28BC /* Sources */,
-				39EFD4CE1AD2422000BF28BC /* Frameworks */,
-				39EFD4CF1AD2422000BF28BC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				39EFD4D31AD2422000BF28BC /* PBXTargetDependency */,
-			);
-			name = phigitalSampleTests;
-			productName = phigitalSampleTests;
-			productReference = 39EFD4D11AD2422000BF28BC /* phigitalSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -357,10 +299,6 @@
 				TargetAttributes = {
 					39EFD4B71AD2422000BF28BC = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					39EFD4D01AD2422000BF28BC = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 39EFD4B71AD2422000BF28BC;
 					};
 				};
 			};
@@ -378,7 +316,6 @@
 			projectRoot = "";
 			targets = (
 				39EFD4B71AD2422000BF28BC /* phigitalSample */,
-				39EFD4D01AD2422000BF28BC /* phigitalSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -417,13 +354,6 @@
 				B2F798591B2EDDB900959EC0 /* Media.xcassets in Resources */,
 				39EFD4C91AD2422000BF28BC /* Images.xcassets in Resources */,
 				B2F7985D1B2EDDB900959EC0 /* PhigitalSettings.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		39EFD4CF1AD2422000BF28BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,23 +403,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		39EFD4CD1AD2422000BF28BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				39EFD4D81AD2422000BF28BC /* phigitalSampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		39EFD4D31AD2422000BF28BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 39EFD4B71AD2422000BF28BC /* phigitalSample */;
-			targetProxy = 39EFD4D21AD2422000BF28BC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		39EFD4C51AD2422000BF28BC /* Main.storyboard */ = {
@@ -621,42 +535,6 @@
 			};
 			name = Release;
 		};
-		39EFD4DF1AD2422000BF28BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(PROJECT_DIR)/PhigitalSDK_150406",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = phigitalSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phigitalSample.app/phigitalSample";
-			};
-			name = Debug;
-		};
-		39EFD4E01AD2422000BF28BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(PROJECT_DIR)/PhigitalSDK_150406",
-				);
-				INFOPLIST_FILE = phigitalSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phigitalSample.app/phigitalSample";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -674,15 +552,6 @@
 			buildConfigurations = (
 				39EFD4DC1AD2422000BF28BC /* Debug */,
 				39EFD4DD1AD2422000BF28BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		39EFD4DE1AD2422000BF28BC /* Build configuration list for PBXNativeTarget "phigitalSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				39EFD4DF1AD2422000BF28BC /* Debug */,
-				39EFD4E01AD2422000BF28BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
