@@ -21,7 +21,6 @@ Option 1:
 Download PhigitalSDK from  https://s3.amazonaws.com/cocoapodbinaries/sdk/release/latest/PhigitalSDK.zip .
 
 Drag and drop PhigitalSDK into your project. 
-Check “Copy items if needed” in pop up window.
 
 
 
@@ -58,10 +57,7 @@ From now on, be sure to always open the generated Xcode workspace (.xcworkspace)
 $ open <YourProjectName>.xcworkspace
 
 
-- Go To Targets -> Build Settings -> Search Paths -> Framework Search Paths and add  $(PROJECT_DIR)/Pods/PhigitalSDK/PhigitalSDK .
-
-
-- Go To Targets -> General -> Embedded Binaries and add PhigitalSDK.framework .
+- Go To Targets -> General -> Embedded Binaries : Delete PhigitalSDK.framework, Press (+) and add PhigitalSDK.framework .
 
 
 - Add URL Scheme (Deeplink Protocol) provided by Phigital (step 1) to your project’s info.plist .
@@ -84,8 +80,11 @@ Unzip to get PhigitalSDKResources.
 Drag and drop the folder into your project.
 
 - Add your appId and appSecret at AppDelegate.
- 
-- Add your experience Id at phigitalStartExperience method at ViewController.m .
+
+- Get your experienceId by navigating to https://demo.gophigital.com -> GoTo Sign In -> GoTo CREATE -> Choose an experience (or create one if you haven't any) ->
+GoTo Share -> Get your experienceId from https://demo.gophigital.com/experienceId link (example of experienceId : expTUSRjNhL).
+
+- Add your experienceId at phigitalStartExperience method at ViewController.m .
 
 - Add your Email and PWD at relevant text fields. 
 
