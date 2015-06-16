@@ -1,0 +1,10 @@
+PODS:
+  - PhigitalSDK (2.0.658)
+
+DEPENDENCIES:
+  - PhigitalSDK (> 0.0.1)
+
+SPEC CHECKSUMS:
+  PhigitalSDK: cb75200dc8a228c26ebf97fe6e742e4bd9fa9607
+
+COCOAPODS: 0.35.0
