@@ -56,7 +56,6 @@
 		39EFD4CB1AD2422000BF28BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		542281424179A7459AA1C922 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7470F3B92456314A87CE4D85 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2F798331B2EDB9900959EC0 /* PhigitalSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhigitalSDK.framework; path = Pods/PhigitalSDK/PhigitalSDK/PhigitalSDK.framework; sourceTree = "<group>"; };
 		B2F798381B2EDDB900959EC0 /* Phigital iOS SDK Implementation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Phigital iOS SDK Implementation.pdf"; sourceTree = "<group>"; };
 		B2F798391B2EDDB900959EC0 /* Phigital iOS SDK Quick Start.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Phigital iOS SDK Quick Start.pdf"; sourceTree = "<group>"; };
 		B2F7983B1B2EDDB900959EC0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -113,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				B2F798361B2EDDB900959EC0 /* PhigitalSDKResources */,
-				B2F798331B2EDB9900959EC0 /* PhigitalSDK.framework */,
 				39EFD4BA1AD2422000BF28BC /* phigitalSample */,
 				39EFD4B91AD2422000BF28BC /* Products */,
 				5E63C3DA00996AA3D51E671B /* Pods */,
