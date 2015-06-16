@@ -14,8 +14,6 @@
 		39EFD4C71AD2422000BF28BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EFD4C51AD2422000BF28BC /* Main.storyboard */; };
 		39EFD4C91AD2422000BF28BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EFD4C81AD2422000BF28BC /* Images.xcassets */; };
 		39EFD4CC1AD2422000BF28BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39EFD4CA1AD2422000BF28BC /* LaunchScreen.xib */; };
-		B2F798341B2EDB9900959EC0 /* PhigitalSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F798331B2EDB9900959EC0 /* PhigitalSDK.framework */; };
-		B2F798351B2EDB9900959EC0 /* PhigitalSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2F798331B2EDB9900959EC0 /* PhigitalSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2F798571B2EDDB900959EC0 /* Phigital iOS SDK Implementation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B2F798381B2EDDB900959EC0 /* Phigital iOS SDK Implementation.pdf */; };
 		B2F798581B2EDDB900959EC0 /* Phigital iOS SDK Quick Start.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B2F798391B2EDDB900959EC0 /* Phigital iOS SDK Quick Start.pdf */; };
 		B2F798591B2EDDB900959EC0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F7983B1B2EDDB900959EC0 /* Media.xcassets */; };
@@ -44,20 +42,6 @@
 		B2F798701B2EDDB900959EC0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2F798561B2EDDB900959EC0 /* Localizable.strings */; };
 		B2F798781B2EF90400959EC0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F798771B2EF90400959EC0 /* WebKit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		B202C9821B00EAA000206154 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B2F798351B2EDB9900959EC0 /* PhigitalSDK.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		39EFD4B81AD2422000BF28BC /* phigitalSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phigitalSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,7 +94,6 @@
 			files = (
 				B2F798781B2EF90400959EC0 /* WebKit.framework in Frameworks */,
 				0F1852138C359AB56B20F92F /* libPods.a in Frameworks */,
-				B2F798341B2EDB9900959EC0 /* PhigitalSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +259,6 @@
 				39EFD4B41AD2422000BF28BC /* Sources */,
 				39EFD4B51AD2422000BF28BC /* Frameworks */,
 				39EFD4B61AD2422000BF28BC /* Resources */,
-				B202C9821B00EAA000206154 /* Embed Frameworks */,
 				B19B558FDE9F86DFF2885FA9 /* Copy Pods Resources */,
 			);
 			buildRules = (
