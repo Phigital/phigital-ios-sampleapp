@@ -57,7 +57,7 @@ From now on, be sure to always open the generated Xcode workspace (.xcworkspace)
 $ open <YourProjectName>.xcworkspace
 
 
-- Go To Targets -> General -> Embedded Binaries : Delete PhigitalSDK.framework and Add PhigitalSDK.framework either from Pods  folder of your project (if using Pods Go To Pods -> Phigital -> PhigitalSDK) or from PhigitalSDK folder (if installed PhigitalSDK manually).
+- Go To Targets -> General -> Embedded Binaries : Add PhigitalSDK.framework either from Pods folder of your project (if using Pods Go To (yourPROJECT_DIR) -> Pods -> Phigital -> PhigitalSDK) or from PhigitalSDK folder (if installed PhigitalSDK manually).
 
 
 - Add URL Scheme (Deeplink Protocol) provided by Phigital (step 1) to your project’s info.plist .
