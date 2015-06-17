@@ -46,7 +46,7 @@ Make sure the quotes are straight, not slanted/apostrophes. If TextEdit gives yo
 Step 3: Install Dependencies<br />
 Now you can install the dependencies in your project:<br />
 $ pod install<br /><br />
-From now on, be sure to always open the generated Xcode workspace (.xcworkspace) instead of the project file when building your project:<br /><br />
+From now on, be sure to always open the generated Xcode workspace (.xcworkspace) instead of the project file when building your project:<br />
 $ open <YourProjectName>.xcworkspace<br /><br />
 
 
