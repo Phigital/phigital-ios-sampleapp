@@ -6,6 +6,8 @@
 	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleDisplayName</key>
+	<string>PhigitalSample</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.phigital.phigitalSample</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -18,6 +20,10 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Phigital experiences take place in the real world with content and actions that must be updated even if the app is in the background.</string>
+	<key>NSLocationAlwaysUsageDescription </key>
+	<string>Phigital experiences take place in the real world with content and actions that must be updated even if the app is in the background.</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

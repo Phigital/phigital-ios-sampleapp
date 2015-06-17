@@ -2,7 +2,7 @@
 //  phigitalSample_Tests.m
 //  phigitalSample Tests
 //
-//  Created by giamou giannis on 6/17/15.
+//  Created by giamou giannis
 //  Copyright (c) 2015 phigital. All rights reserved.
 //
 

@@ -10,7 +10,7 @@
 #import <PhigitalSDK/Phigital.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface AppDelegate () <PhigitalProtocol>
+@interface AppDelegate () <PhigitalProtocol, CLLocationManagerDelegate>
 
 @end
 
@@ -23,6 +23,11 @@
     NSString* appId = @"YourAppID";
     NSString* appSecret = @"YourAppSecret";
     [Phigital initWithAppId:appId andAppSecret:appSecret];
+    
+    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    [locationManager setDelegate:self];
+    [locationManager requestAlwaysAuthorization];
+    [locationManager startUpdatingLocation];
     
     return YES;
 }
@@ -75,28 +80,24 @@
 {
     if (error != nil)
     {
+        //Check for Location Permissions
         if (error.code == PHErrorPermissionsLocationServicesMissing)
         {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enable Location Services"
-                                                            message:@""
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PhigitalSample needs Location Services to be enabled"
+                                                            message:@"Go to Settings -> Privacy -> Location Services -> phigitalSample and enable location services"
                                                            delegate:self
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
             [alert show];
-            
-            [Phigital requestLocationPermissions];
         }
     }
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    if (buttonIndex != alertView.cancelButtonIndex)
-    {
-        [Phigital requestLocationPermissions];
-    }
+    [alertView dismissWithClickedButtonIndex:buttonIndex animated:YES];
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: UIApplicationOpenSettingsURLString]];
 }
-
 
 - (BOOL)application:(UIApplication*)application openURL:(NSURL*)url sourceApplication:(NSString*)sourceApplication annotation:(id)annotation
 {
