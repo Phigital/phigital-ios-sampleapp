@@ -54,8 +54,8 @@
     if(![PhigitalUtils shouldLogin]){
        
        //Launch Discover
-       //UIViewController *discoverController = [Phigital getDiscover];
-       //[self.navigationController pushViewController:discoverController animated:YES];
+       UIViewController *discoverController = [Phigital getDiscover];
+       [self.navigationController pushViewController:discoverController animated:YES];
     }
     else{
    
@@ -76,6 +76,10 @@
         
         //Remove ActivityIndicator
         [spinner stopAnimating];
+        
+        //Launch Discover
+        UIViewController *discoverController = [Phigital getDiscover];
+        [self.navigationController pushViewController:discoverController animated:YES];
  
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Success"
                                                         message:@""
