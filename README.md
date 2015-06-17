@@ -4,7 +4,8 @@
 
 - Go To   https://demo.gophigital.com.
 - Sign Up to create your account.
-- Go To ADMIN -> App.
+- Go To ADMIN.
+- Go To App.
 - Tap NEW APP.
 - Fill in the fields at the form that appears and Save.
 - You should see your APP ID, CLIENT SECRET and DEEPLINK PROTOCOL.
@@ -36,13 +37,13 @@ $ open -e Podfile<br /><br /><br />
 TextEdit should open up showing an empty file. You just created the pod file and opened it! Ready to add some content to the empty pod file?
 Copy and paste the following lines into the TextEdit window:<br />
 
-source 'https://github.com/CocoaPods/specs.git'<br />
+source 'https://github.com/CocoaPods/specs.git'
 
 pod 'Phigital', '> 2.0.0'<br />
 
 Make sure the quotes are straight, not slanted/apostrophes. If TextEdit gives you trouble, use Sublime or copy/paste the code above instead of typing it in.<br /><br />
 
-Step 3: Install Dependencies
+Step 3: Install Dependencies<br />
 Now you can install the dependencies in your project:<br /><br />
 $ pod install<br /><br />
 From now on, be sure to always open the generated Xcode workspace (.xcworkspace) instead of the project file when building your project:<br /><br />
@@ -70,6 +71,11 @@ $ open <YourProjectName>.xcworkspace<br /><br />
 - Get your experienceId by navigating to https://demo.gophigital.com<br />-> GoTo Sign In<br />-> GoTo CREATE<br />-> Choose an experience (or create one if you haven't any)<br />->
 GoTo Share<br />-> Get your experienceId from https://demo.gophigital.com/experienceId link (example of experienceId : expTUSRjNhL).
 
-- Add your experienceId at phigitalStartExperience method at ViewController.m .
+- Add your experienceId at phigitalStartExperience method at ViewController.m.
+
+
+# More Info
+
+For extra info you may refer to Documentation included in PhigitalSDKResources.
  
 
