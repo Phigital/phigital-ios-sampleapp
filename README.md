@@ -27,7 +27,7 @@ Step 1: Download CocoaPods<br />
 CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like Phigital in your projects.
 CocoaPods is distributed as a ruby gem and is installed by running the following commands in Terminal.app:<br /><br />
 $ sudo gem install cocoapods<br />
-$ pod setup<br /><br />
+$ pod setup<br />
 
 Depending on your Ruby installation, you may not have to run as sudo to install the cocoapods gem.<br />
 
@@ -42,7 +42,7 @@ source 'https://github.com/CocoaPods/specs.git'
 
 pod 'Phigital', '> 2.0.0'<br />
 
-Make sure the quotes are straight, not slanted/apostrophes. If TextEdit gives you trouble, use Sublime or copy/paste the code above instead of typing it in.<br /><br />
+Make sure the quotes are straight, not slanted/apostrophes. If TextEdit gives you trouble, use Sublime or copy/paste the code above instead of typing it in.<br />
 
 Step 3: Install Dependencies<br />
 Now you can install the dependencies in your project:<br /><br />
