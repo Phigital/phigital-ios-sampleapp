@@ -39,7 +39,6 @@ TextEdit should open up showing an empty file. You just created the pod file and
 Copy and paste the following lines into the TextEdit window:<br />
 
 source 'https://github.com/CocoaPods/specs.git'
-
 pod 'Phigital', '> 2.0.0'<br />
 
 Make sure the quotes are straight, not slanted/apostrophes. If TextEdit gives you trouble, use Sublime or copy/paste the code above instead of typing it in.<br />
