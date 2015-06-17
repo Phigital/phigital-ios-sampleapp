@@ -1,6 +1,6 @@
 # phigital-ios-sampleapp
 
-Phigital has built a turnkey platform to engage consumers with mobile experiences that use a mix of locations, actions, and rich media to drive purchase behavior and brand loyalty.<br />We do it faster, cheaper, and at scale.
+Phigital has built a turnkey platform to engage consumers with mobile experiences that use a mix of locations, actions, and rich media to drive purchase behavior and brand loyalty.<br />We do it faster, cheaper and at scale.
 
 # How To Get your Phigital Application Identifier, Application Secret and Deeplink Protocol
 
