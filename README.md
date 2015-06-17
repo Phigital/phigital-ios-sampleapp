@@ -30,7 +30,7 @@ $ pod setup<br />
 
 Depending on your Ruby installation, you may not have to run as sudo to install the cocoapods gem.<br />
 
-Step 2 : Create a Podfile<br />
+Step 2 : Create a Podfile (Podfile is included in phigital-ios-sampleapp, so you may skip this step)<br />
 Project dependencies to be managed by CocoaPods are specified in a file called Podfile. Create this file in the same directory as your Xcode project (.xcodeproj) file:<br />
 $ touch Podfile<br />
 $ open -e Podfile<br /><br />
@@ -56,7 +56,7 @@ $ open <YourProjectName>.xcworkspace<br /><br />
 - Add “Required background modes” key to your project’s info.plist and enable audio, bluetooth, network downloading and location services.
 
 
-# How to Get Started with phigitalSample Application
+# How to Get Started with phigital-ios-sampleapp Application
 
 
 - Add your appId and appSecret provided by Phigital at AppDelegate.
