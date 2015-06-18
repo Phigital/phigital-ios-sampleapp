@@ -25,20 +25,23 @@ Drag and drop PhigitalSDK into your project.
 Step 1 : Download CocoaPods<br />
 CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like Phigital in your projects.
 CocoaPods is distributed as a ruby gem and is installed by running the following commands in Terminal.app:<br />
-$ sudo gem install cocoapods<br />
-$ pod setup<br />
+
+    $ sudo gem install cocoapods
+    $ pod setup
 
 Depending on your Ruby installation, you may not have to run as sudo to install the cocoapods gem.<br />
 
 Step 2 : Create a Podfile (Podfile is included in phigital-ios-sampleapp, so you may skip this step)<br />
 Project dependencies to be managed by CocoaPods are specified in a file called Podfile. Create this file in the same directory as your Xcode project (.xcodeproj) file:<br />
-$ touch Podfile<br />
-$ open -e Podfile<br /><br />
+
+    $ touch Podfile
+    $ open -e Podfile
+
 TextEdit should open up showing an empty file. You just created the pod file and opened it! Ready to add some content to the empty pod file?
 Copy and paste the following lines into the TextEdit window:<br />
 
-source 'https://github.com/CocoaPods/specs.git'<br />
-pod 'Phigital', '> 2.0.0'<br />
+    source 'https://github.com/CocoaPods/specs.git'
+    pod 'Phigital', '> 2.0.0'
 
 Make sure the quotes are straight, not slanted/apostrophes. If TextEdit gives you trouble, use Sublime or copy/paste the code above instead of typing it in.<br />
 
@@ -46,7 +49,8 @@ Step 3 : Install Dependencies<br />
 Now you can install the dependencies in your project:<br />
 $ pod install<br /><br />
 From now on, be sure to always open the generated Xcode workspace (.xcworkspace) instead of the project file when building your project:<br />
-$ open <YourProjectName>.xcworkspace<br /><br />
+
+    $ open <YourProjectName>.xcworkspace
 
 
 # Setup XCode Project
