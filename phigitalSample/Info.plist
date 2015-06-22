@@ -22,7 +22,7 @@
 	<string>????</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Phigital experiences take place in the real world with content and actions that must be updated even if the app is in the background.</string>
-	<key>NSLocationAlwaysUsageDescription </key>
+	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Phigital experiences take place in the real world with content and actions that must be updated even if the app is in the background.</string>
 	<key>CFBundleURLTypes</key>
 	<array>

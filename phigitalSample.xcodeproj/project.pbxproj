@@ -41,7 +41,6 @@
 		B2F7986E1B2EDDB900959EC0 /* sidebar_open.aac in Resources */ = {isa = PBXBuildFile; fileRef = B2F798531B2EDDB900959EC0 /* sidebar_open.aac */; };
 		B2F7986F1B2EDDB900959EC0 /* tap.aac in Resources */ = {isa = PBXBuildFile; fileRef = B2F798541B2EDDB900959EC0 /* tap.aac */; };
 		B2F798701B2EDDB900959EC0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2F798561B2EDDB900959EC0 /* Localizable.strings */; };
-		B2F798781B2EF90400959EC0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F798771B2EF90400959EC0 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F798781B2EF90400959EC0 /* WebKit.framework in Frameworks */,
 				0F1852138C359AB56B20F92F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,10 +572,7 @@
 			baseConfigurationReference = 542281424179A7459AA1C922 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/PhigitalSDK/PhigitalSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = phigitalSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -590,10 +585,7 @@
 			baseConfigurationReference = E073D669A2B0FEB777D6CAA5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/PhigitalSDK/PhigitalSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = phigitalSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -663,6 +655,7 @@
 				B23AC8511B317D0600DCF273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
