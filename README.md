@@ -37,8 +37,7 @@ Project dependencies to be managed by CocoaPods are specified in a file called P
     $ touch Podfile
     $ open -e Podfile
 
-TextEdit should open up showing an empty file. You just created the pod file and opened it! Ready to add some content to the empty pod file?
-Copy and paste the following lines into the TextEdit window:<br />
+TextEdit should open up showing an empty file. You just created the pod file and opened it! Copy and paste the following lines into the TextEdit window:<br />
 
     source 'https://github.com/CocoaPods/specs.git'
     pod 'Phigital', '> 2.0.0'
@@ -47,6 +46,7 @@ Make sure the quotes are straight, not slanted/apostrophes. If TextEdit gives yo
 
 Step 3 : Install Dependencies<br />
 Now you can install the dependencies in your project:<br />
+
 $ pod install<br /><br />
 From now on, be sure to always open the generated Xcode workspace (.xcworkspace) instead of the project file when building your project:<br />
 
