@@ -173,7 +173,7 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 {
     //Change TimeLine background image
-    NSString* img = [NSString stringWithFormat:@"Image-%d",row];
+    NSString* img = [NSString stringWithFormat:@"Image-%ld",(long)row];
     UIImage* background = [UIImage imageNamed:img];
     [Phigital setBackgroundImage:background];
 }

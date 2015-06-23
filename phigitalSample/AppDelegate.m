@@ -20,8 +20,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [Phigital setDelegate:self];
-    NSString* appId = @"YourAppID";
-    NSString* appSecret = @"YourAppSecret";
+    NSString* appId = @"YOU_APP_ID";
+    NSString* appSecret = @"YOU_APP_SECRET";
     [Phigital initWithAppId:appId andAppSecret:appSecret];
     
     CLLocationManager *locationManager = [[CLLocationManager alloc] init];
